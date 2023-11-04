@@ -21,46 +21,42 @@ export default function Home() {
 			description: "Stay active and have a blast while playing the sport you love.",
 		},
 	];
+
 	return (
-		<section className="flex flex-col items-center justify-center gap-4 py-8 md:py-10">
-			<div className="inline-block max-w-lg text-center justify-center">
-				<h1 className={title()}>Make&nbsp;</h1>
-				<h1 className={title({ color: "violet" })}>beautiful&nbsp;</h1>
-				<br />
-				<h1 className={title()}>
-					websites regardless of your design experience.
-				</h1>
-				<h2 className={subtitle({ class: "mt-4" })}>
-					Beautiful, fast and modern React UI library.
-				</h2>
+		<section>
+			<div>
+				<FullScreenImage />
 			</div>
+			<div>
+				<div className="flex flex-col items-center justify-center min-h-screen">
+				<div className="card-element bg-blue-300 rounded-lg p-4 md:max-w-screen-md lg:max-w-screen-lg xl:max-w-screen-xl p-4 md:p-6 mt-6 mb-6 shadow-xl">
 
-			<div className="flex gap-3">
-				<Link
-					isExternal
-					as={NextLink}
-					href={siteConfig.links.docs}
-					className={buttonStyles({ color: "primary", radius: "full", variant: "shadow" })}
-				>
-					Documentation
-				</Link>
-				<Link
-					isExternal
-					as={NextLink}
-					className={buttonStyles({ variant: "bordered", radius: "full" })}
-					href={siteConfig.links.github}
-				>
-					<GithubIcon size={20} />
-					GitHub
-				</Link>
-			</div>
 
-			<div className="mt-8">
-				<Snippet hideSymbol hideCopyButton variant="flat">
-					<span>
-						Get started by editing <Code color="primary">app/page.tsx</Code>
-					</span>
-				</Snippet>
+						<h1 className="text-3xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-center mb-4">
+							🏐 Welcome to Team Arena! 🏐
+						</h1>
+						<p className="text-sm md:text-base lg:text-lg xl:text-xl mb-4">
+							Ready for some volleyball excitement? Join us at Arena, where teamwork meets thrill on the court! 🚀🏆
+						</p>
+
+						<h2 className="text-xl md:text-2xl lg:text-3xl xl:text-4xl font-semibold mb-2">
+							Why Join Arena:
+						</h2>
+						<div className="text-xs md:text-sm lg:text-base xl:text-lg flex justify-center mb-4">
+							<DataTable data={yourData} />
+						</div>
+
+						<p className="text-sm md:text-base lg:text-lg xl:text-xl mt-4">
+							Join Arena today and be part of an amazing journey that combines competition, camaraderie, and pure joy!
+							Your volleyball adventure starts here. ⚡🏐
+						</p>
+						<div className="mt-4 flex justify-center">
+							<Button className="bg-blue-500 hover:bg-blue-600 text-white text-base md:text-lg lg:text-xl xl:text-2xl" variant="solid">
+								<NextLink href="/join-now">Join now</NextLink>
+							</Button>
+						</div>
+					</div>
+				</div>
 			</div>
 		</section>
 	);
