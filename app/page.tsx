@@ -8,6 +8,20 @@ import { title, subtitle } from "@/components/primitives";
 import { GithubIcon } from "@/components/icons";
 
 export default function Home() {
+	const yourData = [
+		{
+			point: "🤝🏻 Team Spirit",
+			description: "We're more than a team – we're a family that supports and uplifts each other!",
+		},
+		{
+			point: "💥 Skill Development",
+			description: "Improve your game with top-notch coaching and challenging opponents.",
+		},
+		{
+			point: "🎉 Fun & Fitness",
+			description: "Stay active and have a blast while playing the sport you love.",
+		},
+	];
 	return (
 		<section className="flex flex-col items-center justify-center gap-4 py-8 md:py-10">
 			<div className="inline-block max-w-lg text-center justify-center">
