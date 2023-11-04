@@ -8,7 +8,7 @@ const FullScreenImage = () => {
                     <article className="relative w-full h-screen">
                               <div className="absolute top-0 left-0 w-full h-full">
                                         <Image
-                                                  src="/beach-volley-2.jpg" 
+                                                  src="/beach-volley-2.webp" 
                                                   alt="Beach Volleyball"
                                                   layout="fill" 
                                                   objectFit="cover" 
