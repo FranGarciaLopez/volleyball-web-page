@@ -6,6 +6,7 @@ import { Button } from "@nextui-org/button";
 import NextLink from "next/link";
 import '../styles/animateOnScroll.css'
 
+
 export default function Home() {
 	const yourData = [
 		{
@@ -24,12 +25,12 @@ export default function Home() {
 
 	return (
 		<section>
-			<div>
+			<figure>
 				<FullScreenImage />
-			</div>
+			</figure>
 			<div>
 				<div className="flex flex-col items-center justify-center min-h-screen">
-				<div className="card-element bg-blue-300 rounded-lg p-4 md:max-w-screen-md lg:max-w-screen-lg xl:max-w-screen-xl p-4 md:p-6 mt-6 mb-6 shadow-xl">
+					<div className="card-element bg-blue-300 rounded-lg p-4 md:max-w-screen-md lg:max-w-screen-lg xl:max-w-screen-xl p-4 md:p-6 mt-6 mb-6 shadow-xl">
 
 
 						<h1 className="text-3xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-center mb-4">
