@@ -53,7 +53,7 @@ export default function Home() {
 						</p>
 						<div className="mt-4 flex justify-center">
 							<Button className="bg-blue-500 hover:bg-blue-600 text-white text-base md:text-lg lg:text-xl xl:text-2xl" variant="solid">
-								<NextLink href="/join-now">Join now</NextLink>
+								<NextLink href="/contact">Join now</NextLink>
 							</Button>
 						</div>
 					</div>
