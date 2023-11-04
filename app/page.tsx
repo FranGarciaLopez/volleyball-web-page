@@ -1,11 +1,10 @@
+'use client';
+import React from "react";
+import FullScreenImage from "../components/FullScreenImage";
+import DataTable from "../components/dataTable";
+import { Button } from "@nextui-org/button";
 import NextLink from "next/link";
-import { Link } from "@nextui-org/link";
-import { Snippet } from "@nextui-org/snippet";
-import { Code } from "@nextui-org/code"
-import { button as buttonStyles } from "@nextui-org/theme";
-import { siteConfig } from "@/config/site";
-import { title, subtitle } from "@/components/primitives";
-import { GithubIcon } from "@/components/icons";
+import '../styles/animateOnScroll.css'
 
 export default function Home() {
 	const yourData = [
