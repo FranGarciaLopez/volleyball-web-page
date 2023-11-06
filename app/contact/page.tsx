@@ -14,7 +14,11 @@ export default function Contact() {
 
   async function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
-    const formData = new FormData(event.target);
+
+    // Correctly asserting the type of event.target
+    const target = event.target as HTMLFormElement;
+    const formData = new FormData(target);
+
 
     formData.append("access_key", "d46a6572-f19d-4e15-a27e-ea06a6d6fe9b");
 
