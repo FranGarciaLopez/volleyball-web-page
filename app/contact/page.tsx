@@ -1,5 +1,6 @@
 'use client'
-import { useState } from "react";
+import React from 'react'
+import { useState, ChangeEvent } from "react";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
@@ -11,7 +12,7 @@ export default function Contact() {
     message: "",
   });
 
-  async function handleSubmit(event) {
+  async function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
     const formData = new FormData(event.target);
 
@@ -40,7 +41,7 @@ export default function Contact() {
     }
   }
 
-  const handleInputChange = (e) => {
+  const handleInputChange = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
   };
@@ -78,7 +79,6 @@ export default function Contact() {
             <textarea
               id="message"
               name="message"
-              rows="4"
               className="w-full px-4 py-2 rounded-md border-gray-300 focus:border-blue-500 focus:outline-none"
               placeholder="Your Message"
               value={formData.message}
